@@ -1,0 +1,904 @@
+================================================================================
+RAG KNOWLEDGE BASE — LENA SUPPLY CHAIN SYSTEM
+================================================================================
+Source: SupplyChain.tsx — Full structured extraction for voice RAG application
+Generated: 2026-04-17
+================================================================================
+
+--------------------------------------------------------------------------------
+SECTION 1: SYSTEM OVERVIEW
+--------------------------------------------------------------------------------
+
+System Name: LENA (AI Logistics & Dispatch Orchestration System)
+User Role: Chief Operating Officer (COO)
+Fleet Size: 8,000+ tankers
+Customer Installations: 80,000+
+Dispatch Mode: Real-time AI-assisted with human-in-the-loop approval
+Dashboard KPIs:
+  - Active Deliveries: 847 (+12% vs yesterday)
+  - Production Plants Online: 612 (all monitored)
+  - Inventory Level: 94% (optimal across network)
+  - AI Decisions per Hour: 2,456 (+8% efficiency gain)
+
+--------------------------------------------------------------------------------
+SECTION 2: ACTIVE FLEET STATUS
+--------------------------------------------------------------------------------
+
+Truck ID: LIN-T4821
+Route: Scunthorpe → Helios Steel Works
+Status: In Transit
+ETA: 14 minutes
+
+Truck ID: LIN-T3306
+Route: Grimsby Depot → BioPharm Solutions
+Status: Loading
+ETA: Ready at 09:40
+
+Truck ID: LIN-T5512
+Route: Hull → CryoMed Hospital Trust
+Status: Delivered
+ETA: Complete
+
+Truck ID: LIN-T2291
+Route: Manchester → Peel Ports LNG Terminal
+Status: In Transit
+ETA: 1 hour 22 minutes
+
+--------------------------------------------------------------------------------
+SECTION 3: GAS DISTRIBUTION MIX
+--------------------------------------------------------------------------------
+
+Nitrogen (N₂): 35% of deliveries
+Oxygen (O₂): 28% of deliveries
+Hydrogen (H₂): 20% of deliveries
+Carbon Dioxide (CO₂): 12% of deliveries
+Argon (Ar): 5% of deliveries
+
+--------------------------------------------------------------------------------
+SECTION 4: REGIONAL DELIVERY PERFORMANCE
+--------------------------------------------------------------------------------
+
+North East England: 97.2% on-time — 214 trips
+Yorkshire & Humber: 94.8% on-time — 189 trips
+North West England: 96.1% on-time — 241 trips
+East Midlands: 98.4% on-time — 118 trips
+Scotland: 93.7% on-time — 85 trips
+
+--------------------------------------------------------------------------------
+SECTION 5: ACTIVE RISK ALERTS
+--------------------------------------------------------------------------------
+
+Alert Level HIGH:
+  Message: Helios Steel Works — Tank at threshold. Dispatch pending.
+  Time: 2 minutes ago
+
+Alert Level MEDIUM:
+  Message: M62 congestion alert — ETA +18 minutes for 3 tankers.
+  Time: 9 minutes ago
+
+Alert Level LOW:
+  Message: BioPharm Grimsby — demand spike forecast next 4 hours.
+  Time: 14 minutes ago
+
+Alert Level LOW:
+  Message: Winter weather advisory — Hull Docks route. Monitor.
+  Time: 31 minutes ago
+
+--------------------------------------------------------------------------------
+SECTION 6: SCENARIO A — FACILITY SHUTDOWN (HELIOS STEEL)
+--------------------------------------------------------------------------------
+
+Scenario ID: A
+Label: Facility Shutdown — Helios Steel
+Description: Primary production plant offline. Nitrogen supply critically low.
+Depot: Linde Depot, Scunthorpe
+Truck Assigned: LIN-T4821
+Truck Capacity: 100 m³
+Gas Type: Nitrogen (N₂)
+Inventory Level at Depot: 340 m³
+Expected Demand (7 days): 360 m³
+Inventory Status: LOW — demand exceeds current stock
+
+--- Customer C1: Helios Steel Works ---
+Industry: Steel Manufacturing
+Location: Scunthorpe, North Lincolnshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 800 m³
+Current Tank Level: 10%
+Daily Usage: 38 m³/day
+Threshold: 10%
+Priority: CRITICAL
+Hours to Empty: 2.1 hours
+Distance from Depot: 12 km
+Delivery Required: 45 m³
+Annual Revenue: £4.2 million
+Contract Value: £18.6 million
+Credit Score: 720
+Payment Terms: 28 days
+Contract Type: Take-or-Pay
+SLA Penalty: £14,200 per hour if delivery missed
+Last Delivery: 48 hours ago
+Last Payment Date: 01 April 2026
+Last Payment Amount: £142,000
+Payment On-Time Accuracy: 96%
+Distance from Plant: 12 km
+
+--- Customer C2: BioPharm Solutions ---
+Industry: Pharmaceutical
+Location: Grimsby, Lincolnshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 400 m³
+Current Tank Level: 25%
+Daily Usage: 9 m³/day
+Threshold: 25%
+Priority: HIGH
+Hours to Empty: 11.1 hours
+Distance from Depot: 28 km
+Delivery Required: 35 m³
+Annual Revenue: £2.8 million
+Contract Value: £9.4 million
+Credit Score: 810
+Payment Terms: 21 days
+Contract Type: Long-Term
+SLA Penalty: £8,600 per hour if delivery missed
+Last Delivery: 3 days ago
+Last Payment Date: 28 March 2026
+Last Payment Amount: £86,000
+Payment On-Time Accuracy: 99%
+Distance from Plant: 28 km
+
+--- Customer C3: CryoMed Hospital Trust ---
+Industry: Healthcare
+Location: Hull, East Yorkshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 200 m³
+Current Tank Level: 50%
+Daily Usage: 3.5 m³/day
+Threshold: 50%
+Priority: MEDIUM
+Hours to Empty: 28.6 hours
+Distance from Depot: 41 km
+Delivery Required: 20 m³
+Annual Revenue: £1.9 million
+Contract Value: £6.1 million
+Credit Score: 680
+Payment Terms: 30 days
+Contract Type: Long-Term
+SLA Penalty: £22,000 per hour if delivery missed
+Last Delivery: 5 days ago
+Last Payment Date: 25 March 2026
+Last Payment Amount: £61,000
+Payment On-Time Accuracy: 88%
+Distance from Plant: 41 km
+
+--- Scenario A Route Options ---
+
+Route R1 — Priority-first (LENA Optimal) [RECOMMENDED]
+Stops: Scunthorpe Depot → Helios Steel → BioPharm → CryoMed Hospital
+Distance: 98 km
+Duration: 4.2 hours
+Fuel Cost: £187
+CO₂ Emissions: 94 kg
+On-Time Risk: LOW
+Tags: LENA Recommended, Customer Satisfaction
+
+Route R2 — Geographic shortest path
+Stops: Scunthorpe Depot → BioPharm → CryoMed Hospital → Helios Steel
+Distance: 89 km
+Duration: 5.8 hours
+Fuel Cost: £171
+CO₂ Emissions: 86 kg
+On-Time Risk: HIGH
+Tags: Quick Delivery
+
+Route R3 — Revenue-weighted
+Stops: Scunthorpe Depot → Helios Steel → CryoMed Hospital → BioPharm
+Distance: 112 km
+Duration: 4.9 hours
+Fuel Cost: £215
+CO₂ Emissions: 108 kg
+On-Time Risk: MEDIUM
+Tags: Cost Efficient
+
+LENA Decision for Scenario A:
+"Helios Steel at 10% with 2.1 hrs — dispatching immediately. Take-or-Pay penalty £14.2K/hr averted. BioPharm second at 11.1 hrs. CryoMed last with 28.6hr buffer."
+
+--------------------------------------------------------------------------------
+SECTION 7: SCENARIO B — DEMAND SPIKE (BIOPHARM EMERGENCY)
+--------------------------------------------------------------------------------
+
+Scenario ID: B
+Label: Demand Spike — BioPharm Emergency
+Description: Unexpected production surge at pharmaceutical plant. Threshold breached.
+Depot: Linde Depot, Scunthorpe
+Truck Assigned: LIN-T3306
+Truck Capacity: 100 m³
+Gas Type: Nitrogen (N₂)
+Inventory Level at Depot: 420 m³
+Expected Demand (7 days): 390 m³
+Inventory Status: SUFFICIENT
+
+--- Customer C1: Helios Steel Works ---
+Industry: Steel Manufacturing
+Location: Scunthorpe, North Lincolnshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 800 m³
+Current Tank Level: 25%
+Daily Usage: 38 m³/day
+Threshold: 25%
+Priority: HIGH
+Hours to Empty: 5.3 hours
+Distance from Depot: 12 km
+Delivery Required: 45 m³
+Annual Revenue: £4.2 million
+Contract Value: £18.6 million
+Credit Score: 720
+Payment Terms: 28 days
+Contract Type: Take-or-Pay
+SLA Penalty: £14,200 per hour if delivery missed
+Last Delivery: 36 hours ago
+Last Payment Date: 01 April 2026
+Last Payment Amount: £142,000
+Payment On-Time Accuracy: 96%
+Distance from Plant: 12 km
+
+--- Customer C2: BioPharm Solutions ---
+Industry: Pharmaceutical
+Location: Grimsby, Lincolnshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 400 m³
+Current Tank Level: 50%
+Daily Usage: 24 m³/day (surge — normally 9)
+Threshold: 50%
+Priority: CRITICAL
+Hours to Empty: 8.3 hours
+Distance from Depot: 28 km
+Delivery Required: 35 m³
+Annual Revenue: £2.8 million
+Contract Value: £9.4 million
+Credit Score: 810
+Payment Terms: 21 days
+Contract Type: Long-Term
+SLA Penalty: £8,600 per hour if delivery missed
+Last Delivery: 4 days ago
+Last Payment Date: 28 March 2026
+Last Payment Amount: £86,000
+Payment On-Time Accuracy: 99%
+Distance from Plant: 28 km
+
+--- Customer C3: CryoMed Hospital Trust ---
+Industry: Healthcare
+Location: Hull, East Yorkshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 200 m³
+Current Tank Level: 10%
+Daily Usage: 3.5 m³/day
+Threshold: 10%
+Priority: CRITICAL
+Hours to Empty: 5.7 hours
+Distance from Depot: 41 km
+Delivery Required: 20 m³
+Annual Revenue: £1.9 million
+Contract Value: £6.1 million
+Credit Score: 680
+Payment Terms: 30 days
+Contract Type: Long-Term
+SLA Penalty: £22,000 per hour if delivery missed
+Last Delivery: 6 days ago
+Last Payment Date: 25 March 2026
+Last Payment Amount: £61,000
+Payment On-Time Accuracy: 88%
+Distance from Plant: 41 km
+
+--- Scenario B Route Options ---
+
+Route R1 — Dual-critical optimised (LENA Optimal) [RECOMMENDED]
+Stops: Scunthorpe Depot → Helios Steel → CryoMed Hospital → BioPharm
+Distance: 104 km
+Duration: 4.7 hours
+Fuel Cost: £199
+CO₂ Emissions: 101 kg
+On-Time Risk: LOW
+Tags: LENA Recommended, Customer Satisfaction
+
+Route R2 — Geographic shortest path
+Stops: Scunthorpe Depot → BioPharm → CryoMed Hospital → Helios Steel
+Distance: 89 km
+Duration: 6.1 hours
+Fuel Cost: £171
+CO₂ Emissions: 86 kg
+On-Time Risk: HIGH
+Tags: Quick Delivery
+
+Route R3 — Revenue-weighted
+Stops: Scunthorpe Depot → Helios Steel → BioPharm → CryoMed Hospital
+Distance: 118 km
+Duration: 5.3 hours
+Fuel Cost: £226
+CO₂ Emissions: 113 kg
+On-Time Risk: MEDIUM
+Tags: Cost Efficient
+
+LENA Decision for Scenario B:
+"Two customers simultaneously critical. Helios Steel nearest with Take-or-Pay risk. CryoMed life-critical facility served second. BioPharm demand surge served last with buffer."
+
+--------------------------------------------------------------------------------
+SECTION 8: SCENARIO C — WEATHER DISRUPTION (HULL ROUTE BLOCKED)
+--------------------------------------------------------------------------------
+
+Scenario ID: C
+Label: Weather Disruption — Hull Route Blocked
+Description: Flooding closes A63 corridor. CryoMed hospital access severely limited.
+Depot: Linde Depot, Scunthorpe
+Truck Assigned: LIN-T5512
+Truck Capacity: 100 m³
+Gas Type: Nitrogen (N₂)
+Inventory Level at Depot: 290 m³
+Expected Demand (7 days): 310 m³
+Inventory Status: LOW — demand exceeds current stock
+
+--- Customer C1: Helios Steel Works ---
+Industry: Steel Manufacturing
+Location: Scunthorpe, North Lincolnshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 800 m³
+Current Tank Level: 50%
+Daily Usage: 38 m³/day
+Threshold: 50%
+Priority: MEDIUM
+Hours to Empty: 10.5 hours
+Distance from Depot: 12 km
+Delivery Required: 30 m³
+Annual Revenue: £4.2 million
+Contract Value: £18.6 million
+Credit Score: 720
+Payment Terms: 28 days
+Contract Type: Take-or-Pay
+SLA Penalty: £14,200 per hour if delivery missed
+Last Delivery: 24 hours ago
+Last Payment Date: 01 April 2026
+Last Payment Amount: £142,000
+Payment On-Time Accuracy: 96%
+Distance from Plant: 12 km
+
+--- Customer C2: BioPharm Solutions ---
+Industry: Pharmaceutical
+Location: Grimsby, Lincolnshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 400 m³
+Current Tank Level: 10%
+Daily Usage: 9 m³/day
+Threshold: 10%
+Priority: CRITICAL
+Hours to Empty: 4.4 hours
+Distance from Depot: 28 km
+Delivery Required: 40 m³
+Annual Revenue: £2.8 million
+Contract Value: £9.4 million
+Credit Score: 810
+Payment Terms: 21 days
+Contract Type: Long-Term
+SLA Penalty: £8,600 per hour if delivery missed
+Last Delivery: 5 days ago
+Last Payment Date: 28 March 2026
+Last Payment Amount: £86,000
+Payment On-Time Accuracy: 99%
+Distance from Plant: 28 km
+
+--- Customer C3: CryoMed Hospital Trust ---
+Industry: Healthcare
+Location: Hull, East Yorkshire
+Gas: Nitrogen (N₂)
+Tank Capacity: 200 m³
+Current Tank Level: 25%
+Daily Usage: 3.5 m³/day
+Threshold: 25%
+Priority: HIGH
+Hours to Empty: 14.3 hours
+Distance from Depot: 67 km (extended due to A63 flooding — rerouted via M62)
+Delivery Required: 30 m³
+Annual Revenue: £1.9 million
+Contract Value: £6.1 million
+Credit Score: 680
+Payment Terms: 30 days
+Contract Type: Long-Term
+SLA Penalty: £22,000 per hour if delivery missed
+Last Delivery: 7 days ago
+Last Payment Date: 25 March 2026
+Last Payment Amount: £61,000
+Payment On-Time Accuracy: 88%
+Distance from Plant: 67 km
+
+--- Scenario C Route Options ---
+
+Route R1 — Detour-aware safe route (LENA Optimal) [RECOMMENDED]
+Stops: Scunthorpe Depot → BioPharm → Helios Steel → CryoMed (via M62)
+Distance: 138 km
+Duration: 5.9 hours
+Fuel Cost: £264
+CO₂ Emissions: 132 kg
+On-Time Risk: LOW
+Tags: LENA Recommended, Customer Satisfaction
+Note: M62 detour adds 26 km to reach CryoMed safely
+
+Route R2 — Standard geographic (A63 — flooded)
+Stops: Scunthorpe Depot → BioPharm → CryoMed (A63 — BLOCKED) → Helios Steel
+Distance: 89 km
+Duration: 9.1 hours
+Fuel Cost: £171
+CO₂ Emissions: 86 kg
+On-Time Risk: HIGH
+Tags: Quick Delivery
+WARNING: A63 route is flooded — NOT passable
+
+Route R3 — Revenue-weighted
+Stops: Scunthorpe Depot → Helios Steel → BioPharm → CryoMed (M62)
+Distance: 149 km
+Duration: 6.8 hours
+Fuel Cost: £285
+CO₂ Emissions: 143 kg
+On-Time Risk: MEDIUM
+Tags: Cost Efficient
+
+LENA Decision for Scenario C:
+"A63 flooding confirmed via telemetry. BioPharm at 4.4 hrs — nearest and first. CryoMed rerouted via M62 (+26 km). Helios Steel at 50% has safe buffer."
+
+--------------------------------------------------------------------------------
+SECTION 9: LENA AGENT PIPELINE
+--------------------------------------------------------------------------------
+
+Agent 1 — Telemetry Agent
+Function: Analyses live IoT sensor feeds from customer tanks
+Data Sources: Customer tank sensors, fleet GPS pings (847 active), weather APIs
+Output: Real-time fill levels and hours-to-empty per customer
+
+Agent 2 — Demand & Allocation Agent
+Function: Forecasts 7-day demand curves and allocates delivery volumes
+Process: Computes usage curves, allocates m³ per customer, checks truck capacity
+Output: Balanced allocation against truck capacity
+
+Agent 3 — Pricing Optimisation Agent
+Function: Optimises delivery pricing and surcharges
+Process: Applies contract rate cards, emergency surcharges, fuel index adjustments
+Output: Net margin optimisation (target 18.4%)
+
+Agent 4 — Plant & Logistics Allocation Agent
+Function: Selects depot and checks fleet availability
+Process: Queries depot manifest, verifies truck N₂ certification, computes fill time
+Output: Truck assignment and depot departure time (typically T+12 minutes)
+
+Agent 5 — Route Optimisation Agent
+Function: Optimises multi-stop delivery route
+Process: Constrained shortest-path algorithm with priority weights
+Output: 3 route options evaluated, optimal route selected with SLA verification
+
+Agent 6 — Risk Agent
+Function: Assesses SLA and contract risk exposure
+Process: Cross-references Take-or-Pay clauses, penalty schedules, historical breach data
+Output: Penalty exposure calculation, credit risk profile, contract risk rating
+
+Agent 7 — LENA Orchestrator
+Function: Synthesises all agent outputs into a final decision package
+Process: Merges all agent recommendations
+Output: Decision package ready for COO human-in-the-loop approval
+Confidence: 98.7% typical confidence rating
+
+Human Approval Step:
+The COO must Approve, Modify, or Reject every dispatch plan before the truck departs.
+
+--------------------------------------------------------------------------------
+SECTION 10: GLOBAL TANK TELEMETRY — EUROPE
+--------------------------------------------------------------------------------
+
+Tank EU-T001
+Customer: Helios Steel Works
+Location: Scunthorpe, UK
+Gas: N₂
+Fill Level: 10% — CRITICAL
+Hours to Empty: 2.1 hours
+Daily Usage: 38 m³/day
+
+Tank EU-T002
+Customer: BioPharm Solutions
+Location: Grimsby, UK
+Gas: N₂
+Fill Level: 25% — CRITICAL
+Hours to Empty: 11.1 hours
+Daily Usage: 9 m³/day
+
+Tank EU-T003
+Customer: CryoMed Hospital Trust
+Location: Hull, UK
+Gas: N₂
+Fill Level: 50% — SAFE
+Hours to Empty: 28.6 hours
+Daily Usage: 3.5 m³/day
+
+Tank EU-T004
+Customer: Frankfurt Auto GmbH
+Location: Frankfurt, Germany
+Gas: Ar (Argon)
+Fill Level: 78% — SAFE
+Hours to Empty: 58.4 hours
+Daily Usage: 21 m³/day
+
+Tank EU-T005
+Customer: Paris MedLabs
+Location: Paris, France
+Gas: O₂ (Oxygen)
+Fill Level: 42% — WARNING
+Hours to Empty: 19.7 hours
+Daily Usage: 15 m³/day
+
+Tank EU-T006
+Customer: Milan Textile SpA
+Location: Milan, Italy
+Gas: N₂
+Fill Level: 67% — SAFE
+Hours to Empty: 41.3 hours
+Daily Usage: 11 m³/day
+
+Tank EU-T007
+Customer: Rotterdam Port Logistics
+Location: Rotterdam, Netherlands
+Gas: H₂ (Hydrogen)
+Fill Level: 29% — WARNING
+Hours to Empty: 8.6 hours
+Daily Usage: 44 m³/day
+
+--------------------------------------------------------------------------------
+SECTION 11: GLOBAL TANK TELEMETRY — NORTH AMERICA
+--------------------------------------------------------------------------------
+
+Tank NA-T001
+Customer: Texas Steel Corp
+Location: Houston, TX
+Gas: N₂
+Fill Level: 72% — SAFE
+Hours to Empty: 48.2 hours
+Daily Usage: 42 m³/day
+
+Tank NA-T002
+Customer: Boston BioTech
+Location: Boston, MA
+Gas: O₂
+Fill Level: 28% — WARNING
+Hours to Empty: 9.1 hours
+Daily Usage: 18 m³/day
+
+Tank NA-T003
+Customer: Chicago Medical Center
+Location: Chicago, IL
+Gas: N₂
+Fill Level: 55% — SAFE
+Hours to Empty: 31.6 hours
+Daily Usage: 12 m³/day
+
+Tank NA-T004
+Customer: Seattle Semiconductor
+Location: Seattle, WA
+Gas: Ar
+Fill Level: 18% — CRITICAL
+Hours to Empty: 6.3 hours
+Daily Usage: 35 m³/day
+
+Tank NA-T005
+Customer: Detroit Auto Parts
+Location: Detroit, MI
+Gas: CO₂
+Fill Level: 61% — SAFE
+Hours to Empty: 44.0 hours
+Daily Usage: 28 m³/day
+
+Tank NA-T006
+Customer: LA Pharma Group
+Location: Los Angeles, CA
+Gas: H₂
+Fill Level: 38% — WARNING
+Hours to Empty: 14.8 hours
+Daily Usage: 22 m³/day
+
+--------------------------------------------------------------------------------
+SECTION 12: GLOBAL TANK TELEMETRY — SOUTH AMERICA
+--------------------------------------------------------------------------------
+
+Tank SA-T001
+Customer: São Paulo Steel
+Location: São Paulo, Brazil
+Gas: N₂
+Fill Level: 45% — WARNING
+Hours to Empty: 22.5 hours
+Daily Usage: 39 m³/day
+
+Tank SA-T002
+Customer: Buenos Aires Pharma
+Location: Buenos Aires, Argentina
+Gas: O₂
+Fill Level: 82% — SAFE
+Hours to Empty: 67.3 hours
+Daily Usage: 14 m³/day
+
+Tank SA-T003
+Customer: Lima Mining Co
+Location: Lima, Peru
+Gas: Ar
+Fill Level: 21% — CRITICAL
+Hours to Empty: 7.9 hours
+Daily Usage: 31 m³/day
+
+Tank SA-T004
+Customer: Bogotá Hospital Trust
+Location: Bogotá, Colombia
+Gas: N₂
+Fill Level: 64% — SAFE
+Hours to Empty: 38.2 hours
+Daily Usage: 8 m³/day
+
+Tank SA-T005
+Customer: Santiago Chemical Works
+Location: Santiago, Chile
+Gas: CO₂
+Fill Level: 33% — WARNING
+Hours to Empty: 12.4 hours
+Daily Usage: 26 m³/day
+
+--------------------------------------------------------------------------------
+SECTION 13: GLOBAL TANK TELEMETRY — AFRICA
+--------------------------------------------------------------------------------
+
+Tank AF-T001
+Customer: Johannesburg Steel
+Location: Johannesburg, South Africa
+Gas: N₂
+Fill Level: 53% — SAFE
+Hours to Empty: 28.1 hours
+Daily Usage: 33 m³/day
+
+Tank AF-T002
+Customer: Lagos BioMed
+Location: Lagos, Nigeria
+Gas: O₂
+Fill Level: 17% — CRITICAL
+Hours to Empty: 5.4 hours
+Daily Usage: 19 m³/day
+
+Tank AF-T003
+Customer: Cairo Pharma Trust
+Location: Cairo, Egypt
+Gas: N₂
+Fill Level: 71% — SAFE
+Hours to Empty: 52.7 hours
+Daily Usage: 7 m³/day
+
+Tank AF-T004
+Customer: Nairobi Medical Centre
+Location: Nairobi, Kenya
+Gas: O₂
+Fill Level: 36% — WARNING
+Hours to Empty: 13.2 hours
+Daily Usage: 16 m³/day
+
+Tank AF-T005
+Customer: Accra Industrial
+Location: Accra, Ghana
+Gas: CO₂
+Fill Level: 88% — SAFE
+Hours to Empty: 74.6 hours
+Daily Usage: 12 m³/day
+
+--------------------------------------------------------------------------------
+SECTION 14: GLOBAL TANK TELEMETRY — ASIA
+--------------------------------------------------------------------------------
+
+Tank AS-T001
+Customer: Chennai Pharma Ltd
+Location: Chennai, India
+Gas: N₂
+Fill Level: 24% — CRITICAL
+Hours to Empty: 8.2 hours
+Daily Usage: 29 m³/day
+
+Tank AS-T002
+Customer: Tokyo Electronics
+Location: Tokyo, Japan
+Gas: Ar
+Fill Level: 68% — SAFE
+Hours to Empty: 47.5 hours
+Daily Usage: 37 m³/day
+
+Tank AS-T003
+Customer: Shanghai Steel Group
+Location: Shanghai, China
+Gas: N₂
+Fill Level: 41% — WARNING
+Hours to Empty: 18.3 hours
+Daily Usage: 52 m³/day
+
+Tank AS-T004
+Customer: Mumbai Hospital Network
+Location: Mumbai, India
+Gas: O₂
+Fill Level: 15% — CRITICAL
+Hours to Empty: 4.7 hours
+Daily Usage: 22 m³/day
+
+Tank AS-T005
+Customer: Seoul Semiconductor
+Location: Seoul, South Korea
+Gas: N₂
+Fill Level: 79% — SAFE
+Hours to Empty: 61.8 hours
+Daily Usage: 41 m³/day
+
+Tank AS-T006
+Customer: Singapore LNG Terminal
+Location: Singapore
+Gas: H₂
+Fill Level: 56% — SAFE
+Hours to Empty: 33.9 hours
+Daily Usage: 48 m³/day
+
+Tank AS-T007
+Customer: Bangkok BioTech
+Location: Bangkok, Thailand
+Gas: N₂
+Fill Level: 32% — WARNING
+Hours to Empty: 11.6 hours
+Daily Usage: 17 m³/day
+
+--------------------------------------------------------------------------------
+SECTION 15: GLOBAL TANK TELEMETRY — AUSTRALIA
+--------------------------------------------------------------------------------
+
+Tank AU-T001
+Customer: Sydney Medical Trust
+Location: Sydney, NSW
+Gas: O₂
+Fill Level: 63% — SAFE
+Hours to Empty: 39.4 hours
+Daily Usage: 14 m³/day
+
+Tank AU-T002
+Customer: Melbourne Pharma
+Location: Melbourne, VIC
+Gas: N₂
+Fill Level: 27% — WARNING
+Hours to Empty: 10.3 hours
+Daily Usage: 23 m³/day
+
+Tank AU-T003
+Customer: Perth Mining Corp
+Location: Perth, WA
+Gas: Ar
+Fill Level: 84% — SAFE
+Hours to Empty: 71.2 hours
+Daily Usage: 36 m³/day
+
+Tank AU-T004
+Customer: Brisbane Steel Works
+Location: Brisbane, QLD
+Gas: N₂
+Fill Level: 19% — CRITICAL
+Hours to Empty: 6.8 hours
+Daily Usage: 28 m³/day
+
+Tank AU-T005
+Customer: Adelaide Chemical
+Location: Adelaide, SA
+Gas: CO₂
+Fill Level: 47% — WARNING
+Hours to Empty: 24.1 hours
+Daily Usage: 18 m³/day
+
+--------------------------------------------------------------------------------
+SECTION 16: TANK STATUS RULES
+--------------------------------------------------------------------------------
+
+SAFE: Fill level 50% or above
+WARNING: Fill level between 30% and 49%
+CRITICAL: Fill level below 30%
+
+When fill level equals or falls below the customer's threshold percentage, priority is escalated to HIGH or CRITICAL and dispatch is triggered immediately.
+
+--------------------------------------------------------------------------------
+SECTION 17: CONTRACT TYPES EXPLAINED
+--------------------------------------------------------------------------------
+
+Take-or-Pay:
+  - Customer must pay for a minimum volume of gas regardless of usage.
+  - If supplier fails to deliver, a penalty per hour is charged.
+  - Highest financial risk contract for the supplier if delivery is missed.
+  - Example: Helios Steel Works — £14,200/hr penalty.
+
+Long-Term:
+  - Fixed-duration supply agreement with agreed SLA response times.
+  - Penalties apply for late delivery but terms are less punitive than Take-or-Pay.
+  - Example: BioPharm Solutions — £8,600/hr, CryoMed Hospital — £22,000/hr.
+
+Spot:
+  - Ad-hoc delivery with no long-term commitment.
+  - Flexible pricing; no recurring penalty clauses.
+
+--------------------------------------------------------------------------------
+SECTION 18: PRIORITY LEVELS EXPLAINED
+--------------------------------------------------------------------------------
+
+CRITICAL:
+  - Tank level is at or below threshold.
+  - Hours to empty is typically under 10 hours.
+  - Immediate dispatch required.
+  - Penalty clock is active or imminent.
+
+HIGH:
+  - Tank level approaching threshold.
+  - Hours to empty typically between 5 and 15 hours.
+  - Dispatch required within current run.
+
+MEDIUM:
+  - Tank level above threshold with sufficient buffer.
+  - Hours to empty above 15 hours.
+  - Can be served later in the delivery sequence.
+
+--------------------------------------------------------------------------------
+SECTION 19: DECISION FACTORS USED BY LENA
+--------------------------------------------------------------------------------
+
+1. Telemetry time-to-empty — primary urgency signal
+2. Contract type and penalty clauses — financial risk of delay
+3. Annual revenue weighting — value of the customer relationship
+4. Credit risk assessment — customer credit score and payment history
+5. Payment terms and on-time accuracy — reliability of the customer
+6. Route distance and fuel cost — operational efficiency
+7. Carbon emissions (CO₂ kg) — sustainability tracking
+8. Road and weather conditions — real-time disruption data (e.g. A63 flooding)
+
+--------------------------------------------------------------------------------
+SECTION 20: DISPATCH APPROVAL WORKFLOW
+--------------------------------------------------------------------------------
+
+Step 1: LENA agents complete full analysis (all 7 agents run in sequence).
+Step 2: LENA Orchestrator generates a decision package with recommended route.
+Step 3: Decision is presented to COO for human-in-the-loop review.
+Step 4: COO chooses one of three actions:
+  - APPROVE & DISPATCH: Truck departs immediately. Confirmation and summary shown.
+  - MODIFY: COO can select a different route option before approving.
+  - REJECT: Truck placed on hold. Revised plan must be generated.
+Step 5: If approved, truck departs and all agents stand by for next event.
+
+--------------------------------------------------------------------------------
+SECTION 21: SAMPLE Q&A FOR VOICE RAG
+--------------------------------------------------------------------------------
+
+Q: What is the current fill level of Helios Steel Works?
+A: In Scenario A, Helios Steel Works has a fill level of 10%, which is at its critical threshold, with only 2.1 hours until empty. It is marked as CRITICAL priority.
+
+Q: Which customer has the highest SLA penalty?
+A: CryoMed Hospital Trust has the highest SLA penalty at £22,000 per hour if a delivery is missed.
+
+Q: What route does LENA recommend for Scenario A?
+A: LENA recommends Route R1 — the priority-first route: Scunthorpe Depot → Helios Steel → BioPharm → CryoMed Hospital. It covers 98 km in 4.2 hours at £187 fuel cost with LOW on-time risk.
+
+Q: Why is CryoMed served last in Scenario A even though its penalty is highest?
+A: CryoMed has 28.6 hours of buffer remaining, which is well above its threshold. Despite its £22,000/hr penalty, there is no imminent risk of breach. Helios Steel has only 2.1 hours remaining and BioPharm 11.1 hours, so both are more urgent.
+
+Q: What happens on the A63 route in Scenario C?
+A: In Scenario C, the A63 corridor is blocked due to flooding. CryoMed Hospital Trust in Hull cannot be accessed via the standard route. LENA reroutes via the M62 motorway, adding 26 km to the journey. Route R2 using the A63 is flagged HIGH risk and should not be used.
+
+Q: What is BioPharm Solutions' credit score?
+A: BioPharm Solutions has a credit score of 810, the highest among the three main customers. They pay within 21 days and have a 99% on-time payment accuracy.
+
+Q: How many agents does LENA use?
+A: LENA uses 7 agents: Telemetry Agent, Demand & Allocation Agent, Pricing Optimisation Agent, Plant & Logistics Allocation Agent, Route Optimisation Agent, Risk Agent, and the LENA Orchestrator which synthesises all outputs.
+
+Q: What is the global fleet size?
+A: The LENA system manages a fleet of over 8,000 tankers serving more than 80,000 customer installations worldwide.
+
+Q: Which tank in Asia is most critical?
+A: Mumbai Hospital Network has the most critical tank in Asia, with a fill level of only 15% and just 4.7 hours to empty, using 22 m³ of oxygen per day.
+
+Q: What gas types does LENA dispatch?
+A: LENA dispatches five gas types: Nitrogen (N₂) at 35% of deliveries, Oxygen (O₂) at 28%, Hydrogen (H₂) at 20%, Carbon Dioxide (CO₂) at 12%, and Argon (Ar) at 5%.
+
+================================================================================
+END OF RAG KNOWLEDGE BASE
+================================================================================
