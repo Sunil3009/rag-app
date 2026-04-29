@@ -4,7 +4,7 @@ import shutil
 from services.pdf_service import extract_text
 from services.chunking import chunk_text
 from services.embedding_service import get_embedding
-from db import insert_document
+from services.db import insert_document
 from services.rag_service import ask_question
 from pydantic import BaseModel
 

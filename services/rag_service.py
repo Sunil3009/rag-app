@@ -1,5 +1,5 @@
 from services.embedding_service import get_embedding
-from db import search_similar
+from services.db import search_similar
 import requests
 
 def ask_question(question: str):
